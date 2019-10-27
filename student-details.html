@@ -1,0 +1,23 @@
+<div class="container"> 
+    <div class="row home-link">
+        <a href="#!">Go back to Home</a>
+    </div>
+    <div class="row student-cards">
+        <div class="student-detail student-name"> Student Name : {{studentRecords[$route.current.params.id].name}}</div>
+        <div class="student-detail student-class"> Class : {{studentRecords[$route.current.params.id].class}}</div>
+        <div class="student-detail student-rollno"> Student Name : {{studentRecords[$route.current.params.id].rollNo}}</div>
+        <div class="student-detail student-marks"> Marks</div>
+        <table class="student-detail">
+            <tr>
+                <th>Subject 1</th>
+                <th>Subject 2</th>
+                <th>Subject 3</th>
+            </tr>
+            <tr>
+                <td>{{studentRecords[$route.current.params.id].marks.s1}}</td>
+                <td>{{studentRecords[$route.current.params.id].marks.s2}}</td>
+                <td>{{studentRecords[$route.current.params.id].marks.s3}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container"> 
+    <div class="row filter-and-order">
+        <span class="name-filter">Name Filter: <input type="text" ng-model="nameFilter"></span>
+        <button type="button" class="btn btn-primary" ng-click="orderByName()">
+            Order By Name
+            <span class="glyphicon" ng-class="{ 'glyphicon-chevron-up' : namesAscending, 'glyphicon-chevron-down' : !namesAscending}"></span>
+        </button>
+        <button type="button" class="btn btn-success" ng-click="orderByMark()">
+            Order By Marks
+            <span class="glyphicon" ng-class="{ 'glyphicon-chevron-up' : marksAscending, 'glyphicon-chevron-down' : !marksAscending}"></span>
+        </button>
+    </div>
+    <div class="row student-cards">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="x in studentsArrayObject | filter:{name:nameFilter} | orderBy:myOrderByValue">
+        <a href="#!{{x.studentId}}">
+            <div class="student-card">
+                <p class="student-name">{{x.name}}</p>
+                <p>Student Id : {{x.studentId}}</p>
+                <p>Total Marks : {{x.totalMarks}}</p>
+            </div>
+        </a>
+        </div>
+    </div>
+</div>
