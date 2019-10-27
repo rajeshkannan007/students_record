@@ -1,0 +1,82 @@
+.container .filter-and-order {
+    text-align: center;
+}
+.container .filter-and-order .name-filter {
+    font-size: 16px;
+}
+.container .filter-and-order .name-filter input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.container .filter-and-order .btn {
+    margin: 10px;
+}
+.container .filter-and-order .btn .glyphicon {
+    margin-left: 5px;
+}
+.container .student-cards .student-card {
+    border: 1px solid black;
+    height: 110px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px #A4ABAD;
+    cursor: pointer;
+}
+.container .student-cards .student-card  .student-name {
+    color: #0FBB0F;
+    font-weight: bold;
+}
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: inherit;
+    background-color: #eee;
+}
+.jumbotron h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+.jumbotron p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 200;
+}
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+.home-link {
+    text-decoration: underline;
+}
+.student-detail {
+    margin: 15px;
+    font-size: 16px;
+}
+.student-marks {
+    font-weight: bold;
+    text-decoration: underline;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #a8d0eb;
+  }
